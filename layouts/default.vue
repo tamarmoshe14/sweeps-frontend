@@ -6,7 +6,7 @@
 
 <style>
 html {
-  font-family:
+  /* font-family:
     'Source Sans Pro',
     -apple-system,
     BlinkMacSystemFont,
@@ -57,6 +57,6 @@ html {
 
 .button--grey:hover {
   color: #fff;
-  background-color: #35495e;
+  background-color: #35495e; */
 }
 </style>

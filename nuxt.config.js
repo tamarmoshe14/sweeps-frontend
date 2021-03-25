@@ -10,11 +10,14 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+          {rel:"stylesheet", href:"https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css"}],
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
-  css: [],
+  css: [
+    '~assets/scss/style.scss'
+  ],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [],
@@ -29,7 +32,11 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/bootstrap
     'bootstrap-vue/nuxt',
+    '@nuxtjs/style-resources'
   ],
+  styleResources: {
+    scss: ['./assets/scss/style.scss']
+  },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {},
